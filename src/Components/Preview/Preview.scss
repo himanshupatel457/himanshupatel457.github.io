@@ -1,0 +1,87 @@
+@import '../../App.scss';
+
+
+
+
+
+
+
+.Preview {
+    height: calc(100vh);
+    overflow: hidden;
+    background: rgb(12, 41, 89);
+    background: linear-gradient(180deg, rgba(12, 41, 89, 1) 35%, rgba(59, 82, 121, 1) 100%);
+    position: relative;
+
+    .slider-text {
+        top: 25px;
+        position: absolute;
+        font-size: 15vh;
+        // bottom: 200px;
+        white-space: nowrap;
+        color: #08075e48;
+        width: 50%;
+        opacity: 0.5;
+        // font-weight: bold;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            // display: none;
+            top: 20vh;
+            height: 30vh;
+            width: auto;
+        }
+
+        img {
+            width: 80%;
+
+            @include mobile {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .motivation {
+        position: absolute;
+        top: 450px;
+        left: 340px;
+        font-size: 8vh;
+        white-space: nowrap;
+        color: #e9e7e480;
+        width: 400%;
+        opacity: 0.5;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+            top: 55vh;
+            left: 5vh;
+            font-size: 20px;
+            font-weight: 500;
+            color: azure;
+        }
+    }
+
+    .quote-text {
+        position: absolute;
+        top: 600px;
+        font-size: 20vh;
+        white-space: nowrap;
+        color: #08075e48;
+        width: 400%;
+        opacity: 0.5;
+        // font-weight: bold;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            font-size: 10vh;
+            font-weight: 500;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+}

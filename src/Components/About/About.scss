@@ -1,0 +1,118 @@
+@import '../../App.scss';
+
+
+
+
+.About {
+    position: relative;
+    background: rgb(12, 41, 89);
+    // background: linear-gradient(180deg, rgba(12, 41, 89, 1) 35%, rgba(59, 82, 121, 1) 100%);
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    // opacity: 1;
+
+    .container {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            gap: 50px;
+
+            .Introduction {
+                padding: 15px;
+                padding-top: 50px;
+                // line-height: 60px;
+                text-align: justify;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 250;
+
+                    @include mobile {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 40px;
+
+                        @include mobile {
+                            font-size: 25px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                h4 {
+                    font-size: 30px;
+                    font-weight: 300;
+
+                    @include mobile {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 300;
+
+                    @include mobile {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 40px;
+
+                        @include mobile {
+                            font-size: 25px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .slider-text {
+                top: 25px;
+                position: absolute;
+                // font-size: vh;
+                bottom: 200px;
+                white-space: nowrap;
+                color: #08075e48;
+                width: 50%;
+                opacity: 0.5;
+                // font-weight: bold;
+                align-items: center;
+                justify-content: center;
+
+                @include mobile {
+                    top: 90px;
+                    position: absolute;
+                    bottom: 100px;
+                }
+
+                img {
+                    width: 70%;
+                    opacity: 0.4;
+                }
+            }
+
+        }
+    }
+}

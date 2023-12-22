@@ -1,0 +1,126 @@
+@import '../../App.scss';
+
+
+
+
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 100px;
+            line-height: 88px;
+
+            @include mobile {
+                font-size: 50px;
+                font-weight: 500;
+            }
+        }
+
+        span {
+            font-weight: 300;
+        }
+
+        .item {
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+    }
+
+    .form-container {
+        flex: 1;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include mobile {
+                padding-bottom: 30px;
+            }
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 2px solid white;
+                color: azure;
+                font-size: 1.5vh;
+                border-radius: 10px;
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                font-size: 20px;
+                background-color: rgb(221, 201, 22);
+                cursor: pointer;
+                border: 2px solid rgb(192, 177, 177);
+                border-radius: 10px;
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 8px;
+                    // margin: 0;
+                }
+            }
+        }
+    }
+
+    .move-up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #083350;
+        border: 1px solid white;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 500px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+
+        &:hover {
+            background-color: #2c3e50;
+        }
+
+
+    }
+
+}
